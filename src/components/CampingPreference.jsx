@@ -38,7 +38,7 @@ function CampingPreference({
             <div className="group border-solid border-2 border-foreground rounded cursor-pointer peer-checked:border-yellowaccent  peer-focus-visible:ring  peer-focus-visible:ring-offset-2  peer-checked:text-yellowaccent flex justify-between">
               <div className="flex flex-col m-2 w-full">
                 <div className="flex gap-2">
-                  Add Green Camping
+                  <p> Add Green Camping</p>
                   <Popover>
                     <PopoverTrigger>
                       <svg
@@ -62,7 +62,7 @@ function CampingPreference({
 
               <div
                 className={`w-6 h-6 rounded-bl-xl flex ${
-                  greenChecked ? "bg-yellowaccent" : ""
+                  greenChecked ? "bg-yellowaccent" : "bg-foreground"
                 }`}
               >
                 <svg

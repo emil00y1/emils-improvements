@@ -52,9 +52,8 @@ function CampingAreas({
         </p>
       ) : null}
       <div className="flex flex-col gap-3 items-center">
-        <ClipLoader size="70" color="#fec90b" />
-        {/*  {campingArea.length === 0 ? (
-          <ClipLoader />
+        {campingArea.length === 0 ? (
+          <ClipLoader size="70px" color="#fec90b" className="my-28" />
         ) : (
           campingArea.map((spot) => (
             <RadioTile
@@ -70,7 +69,7 @@ function CampingAreas({
               chosenArea={chosenArea}
             />
           ))
-        )} */}
+        )}
       </div>
     </div>
   );

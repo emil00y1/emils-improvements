@@ -3,7 +3,7 @@ function NumberInput({ setAmount, amount, setErrorMsg }) {
     <>
       <div className="flex border-2 border-foreground  p-1.5 rounded-md">
         <button
-          aria-label="ticket increase"
+          aria-label="ticket decrease"
           disabled={amount === 0}
           onClick={() => {
             setAmount((old) => old.slice(0, -1));
@@ -31,7 +31,7 @@ function NumberInput({ setAmount, amount, setErrorMsg }) {
         />
 
         <button
-          aria-label="ticket decrease"
+          aria-label="ticket increase"
           onClick={() => {
             setErrorMsg("");
             setAmount((old) =>

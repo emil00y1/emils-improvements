@@ -3,6 +3,7 @@
 import Headline from "@/components/Headline";
 import LineupNav from "@/components/LineupNav";
 import ArtistCard from "@/components/ArtistCard";
+import { ClipLoader } from "react-spinners";
 import { useState, useEffect } from "react";
 
 async function fetchScheduleFunc() {
@@ -130,7 +131,9 @@ function Lineup() {
             );
           })
         ) : (
-          <p>No band data available</p>
+          <div className="w-full grid place place-content-center">
+            <ClipLoader size="70px" color="#fec90b" className="my-28" />
+          </div>
         )}
       </section>
     </main>

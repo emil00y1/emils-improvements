@@ -133,7 +133,15 @@ function BuyTickets() {
         <Progress value={pageView * 16.66} className="mb-6" />
 
         <form onSubmit={handleSubmit}>
-          {pageView === 1 ? (
+          <CampingAreas
+            reservation={reservation}
+            chosenArea={chosenArea}
+            setChosenArea={setChosenArea}
+            setErrorMsg={setErrorMsg}
+            errorMsg={errorMsg}
+            amount={amount}
+          />
+          {/*    {pageView === 1 ? (
             <TicketType
               setErrorMsg={setErrorMsg}
               errorMsg={errorMsg}
@@ -186,7 +194,7 @@ function BuyTickets() {
             />
           ) : (
             <Confirmation paymentData={paymentData} amount={amount} />
-          )}
+          )} */}
           <div className="flex items-center my-10 justify-center gap-5">
             {pageView < 6 && pageView > 1 ? (
               <Button

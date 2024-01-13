@@ -3,6 +3,7 @@ function NumberInput({ tentSpace, amount, setAmount, label }) {
     <>
       <div className="flex border-2 border-foreground p-1.5 rounded-md">
         <button
+          aria-label="tent amount decrease"
           disabled={amount === 0}
           onClick={() => {
             setAmount((old) => old - 1);
@@ -32,6 +33,7 @@ function NumberInput({ tentSpace, amount, setAmount, label }) {
         />
 
         <button
+          aria-label="tent amount increase"
           onClick={() => {
             setAmount((old) => old + 1);
           }}

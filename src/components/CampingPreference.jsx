@@ -93,6 +93,7 @@ function CampingPreference({
                 <p className="text-sm">299.00</p>
               </div>
               <NumberInput2
+                tentSpace="2"
                 setAmount={setTentTwoAmount}
                 amount={tentTwoAmount}
                 label="add 2 person tent"
@@ -106,7 +107,7 @@ function CampingPreference({
                 <p className="text-sm">399.00</p>
               </div>
               <NumberInput2
-                tentSpace="1"
+                tentSpace="3"
                 setAmount={setTentThreeAmount}
                 amount={tentThreeAmount}
                 label="add 3 person tent"

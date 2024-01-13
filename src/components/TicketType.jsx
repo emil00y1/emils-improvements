@@ -32,9 +32,9 @@ function TicketType({
     <>
       <div className="flex flex-col gap-6">
         <div className="flex justify-between">
-          <label className="grid place-content-center" id="ticketamount">
+          <p className="grid place-content-center" id="ticketamount">
             Number of tickets
-          </label>
+          </p>
           <NumberInput
             setErrorMsg={setErrorMsg}
             setStandAmount={setStandAmount}

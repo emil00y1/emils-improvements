@@ -40,7 +40,7 @@ function CampingPreference({
                 <div className="flex gap-2">
                   <p> Add Green Camping</p>
                   <Popover>
-                    <PopoverTrigger>
+                    <PopoverTrigger aria-label="more info about green camping">
                       <svg
                         className="fill-foreground opacity-70"
                         xmlns="http://www.w3.org/2000/svg"

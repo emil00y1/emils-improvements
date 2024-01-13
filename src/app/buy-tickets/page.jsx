@@ -133,13 +133,15 @@ function BuyTickets() {
         <Progress value={pageView * 16.66} className="mb-6" />
 
         <form onSubmit={handleSubmit}>
-          <CampingPreference
-            tentTwoAmount={tentTwoAmount}
-            setTentTwoAmount={setTentTwoAmount}
-            tentThreeAmount={tentThreeAmount}
-            setTentThreeAmount={setTentThreeAmount}
-            greenChecked={greenChecked}
-            setGreenChecked={setGreenChecked}
+          <PersonalInfo
+            emailError={emailError}
+            acceptedTerms={acceptedTerms}
+            termsError={termsError}
+            setAcceptedTerms={setAcceptedTerms}
+            setAmount={setAmount}
+            amount={amount}
+            errorMsg={errorMsg}
+            pageView={pageView}
           />
           {/*    {pageView === 1 ? (
             <TicketType
